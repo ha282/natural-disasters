@@ -54,6 +54,7 @@ def extract_dataset9_execution() -> pd.DataFrame:
     # Execute the query
     dataset9_df = execute_extract_query(query, connection)
     dataset9_df.to_csv("data/raw/uncleaned-dataset9.csv", index=False)
+    logger.info(f"Null counts:\n{dataset9_df.isnull().sum()}")
     connection.close()
 
     # Return the created DataFrame

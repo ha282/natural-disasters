@@ -13,7 +13,7 @@ def extract_data() -> tuple[pd.DataFrame, pd.DataFrame]:
 
         logger.info(
             f"Data extraction completed successfully - "
-            f"Country: {dataset9.shape}"
+            f"Natural Disasters: {dataset9.shape}"
         )
 
         return (dataset9)
