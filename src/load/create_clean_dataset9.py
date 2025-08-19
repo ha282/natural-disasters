@@ -76,7 +76,7 @@ def create_clean_dataset9(transformed_data: pd.DataFrame) -> None:
             con=connection,
             if_exists="append",
             index=False,
-            schema="all_2506"
+            schema="de_2506_a"
         )
         
         action = "appended to" if table_exists else "created and loaded into"
