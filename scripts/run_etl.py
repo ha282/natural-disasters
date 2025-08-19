@@ -3,6 +3,7 @@ import sys
 from config.env_config import setup_env
 from src.extract.extract import extract_data
 from src.transform.transform import transform_data
+from src.load.load import load_data
 from src.utils.logging_utils import setup_logger
 
 
@@ -26,9 +27,7 @@ def main():
         logger.info("Beginning data extraction phase")
         extracted_data = extract_data()
         logger.info("Data extraction phase completed")
-        logger.info(
-            f"ETL pipeline completed successfully in {env} environment"
-        )
+   
         logger.info("Beginning the data transformation phase")
         transformed_data = transform_data(extracted_data)
         logger.info("Data transformation phase completed")
@@ -36,8 +35,18 @@ def main():
         logger.info(
             f"ETL pipeline completed successfully in {env} environment"
         )
+        
+        logger.info("Data transformation phase completed")
 
-        return transformed_data
+        logger.info("Beginning data load phase")
+        load_data(transformed_data)
+        logger.info("Data load phase completed")
+
+        logger.info(
+            f"ETL pipeline completed successfully in {env} environment"
+        )
+
+        #return transformed_data
     except Exception as e:
         logger.error(f"ETL pipeline failed: {str(e)}")
         sys.exit(1)
