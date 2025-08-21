@@ -78,7 +78,7 @@ So that I can explore insights easily.
 Link to Kanban board https://github.com/users/ha282/projects/3/views/1
 
 ## Setup
-  1. Environment\
+1. Environment
     Create `.env.dev` file in the project root with:
     ```env
     # source database
@@ -93,9 +93,8 @@ Link to Kanban board https://github.com/users/ha282/projects/3/views/1
     TARGET_DB_USER={}
     TARGET_DB_PASSWORD={}
     TARGET_DB_HOST={}
-    TARGET_DB_PORT={}`
+    TARGET_DB_PORT={}
     ```
-
 2. Create virtual environment
    
    ```bash
