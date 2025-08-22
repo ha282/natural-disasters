@@ -187,5 +187,5 @@ test/
 
 #### 4. How this project could be deployed or adapted into an automated cloud environment using the AWS services you have covered?
 - **Database**: Replace the PostgreSQL database with an Amazon RDS(postgres) or an alternative AWS postgres database. 
-- **ETL**: AWS Lambda function can be used to automate the ETL process.
+- **ETL**: AWS Glue for ETL job.
 - **Monitor**: AWS CloudWatch can be used to monitor the ETL process and log the errors.
