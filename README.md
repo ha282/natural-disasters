@@ -74,7 +74,10 @@ So that I can explore insights easily.
 ---
 ---
 
-# Data Quality
+## Kanban
+Link to Kanban board https://github.com/users/ha282/projects/3/views/1
+
+## Data Quality
 Excel (CSV) -> SQL
 | ID of SQL or Checked Rows | Description of Check                                          | Result in SOURCE                                              | Result in DESTINATION                                         | OUTCOME |
 |---------------------------|---------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|---------|
@@ -83,8 +86,6 @@ Excel (CSV) -> SQL
 | SQL-3                    | Count of Columns                                              | 46                                                             | 46                                                             | PASS    |
 | SQL-4                    | Date format Check <br><br>Compare 5 randomly chosen values from Source, check date matches in Destination. | 2009-05-22<br>2024-06-07<br>2019-06-17<br>2004-10-05<br>2006-09-17 | 2009-05-22<br>2024-06-07<br>2019-06-17<br>2004-10-05<br>2006-09-17 | PASS    |
 
-## Kanban
-Link to Kanban board https://github.com/users/ha282/projects/3/views/1
 
 ## Setup
 1. Environment
