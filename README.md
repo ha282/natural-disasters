@@ -3,7 +3,7 @@
 ## Project Objective
 
 The goal of this project was to build an **ETL pipeline** that extracts, transforms and loads natural disaster data into a **SQL database**.  
-The processed data is then used to create visualisations with **Streamlit**.
+The data is then used to create visualisations with **Streamlit**.
 
 ## ETL Pipeline
 
